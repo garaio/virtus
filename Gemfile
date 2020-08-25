@@ -2,6 +2,9 @@ source 'https://rubygems.org'
 
 gemspec
 
-gem 'devtools', :git => 'https://github.com/datamapper/devtools'
-
-eval File.read('Gemfile.devtools')
+group :development do
+  gem 'rake'
+  # keep at rspec @ version 2 because it uses 'its' and 'mock' which are no longer in use
+  gem 'rspec', '~> 2.14'
+  gem 'simplecov'
+end

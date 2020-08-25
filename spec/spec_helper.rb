@@ -3,10 +3,10 @@ require 'virtus'
 
 ENV['TZ'] = 'UTC'
 
-if ENV['COVERAGE']
-  require 'simplecov'
-  SimpleCov.start
-end
+# if ENV['COVERAGE']
+#   require 'simplecov'
+#   SimpleCov.start
+# end
 
 # require spec support files and shared behavior
 Dir[File.expand_path('../shared/**/*.rb', __FILE__)].each { |file| require file }
